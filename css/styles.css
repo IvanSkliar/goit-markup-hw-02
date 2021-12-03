@@ -29,6 +29,7 @@
   }
   ul,ol{list-style: none;}
   address{font-style: normal;}
+  
    /* Шапка */
   .header,
   .header-list,.header-list-contacts{
@@ -56,23 +57,30 @@
       
       color: var(--primary-color);
       }
-      
+      .link-studio:active,
+      .link-studio:visited {
+        color: var(--interactive-color);
+      }
+      .link-portfolio:active,
+      .link-portfolio:visited {
+        color: var(--interactive-color);
+      }
       .link:focus,
       .link:hover {background-color: var(--header-color);
         color: var(--interactive-color);
       
       cursor: pointer;}
-    .header-list-contacts{font-family: var(--primary-font);
-      font-style: normal;
+  
+    .contacts{font-family: var(--primary-font);
+     
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em;
-      
-      color:var(--secondary-color);
-      }
-    .header-list.contacts:hover,
-    .header-list.contacts:focus{color: var(--interactive-color);}
+      color: var(--secondary-color);
+    }
+    .contacts:focus,
+    .contacts:hover{color: var(--interactive-color);}
   /* Предложение */
   .order-background {
     background-color: var(--background-color);
@@ -93,8 +101,7 @@
     color: var(--header-color);
   }
   .button {
-    width: 200px;
-    height: 50px;
+    font-family: inherit;
     border-radius: 4px;
     background-color: var(--interactive-color);
     color: var(--header-color);
@@ -109,8 +116,8 @@
   
   /* Приоритеты */
   .list{display: flex;}
-  .priorities-our{font-family: var(--primary-font);
-    font-style: normal;
+  .priorities-our{font-family:inherit;
+    
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
@@ -135,7 +142,7 @@
   }
   .activity-title{
     font-family:var(--primary-font);
-    font-style: normal;
+   
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
@@ -150,7 +157,7 @@
  .staff{background-color: var(--rear-background);}
  .staff-our{
    font-family: var(--primary-font);
-  font-style: normal;
+ 
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -161,7 +168,7 @@
   }
   .staff-list{display: flex;}
   .staff-name{font-family: var(--primary-font);
-    font-style: normal;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -174,7 +181,7 @@
     
     }
     .staff-position{font-family:var(--primary-font);
-      font-style: normal;
+     
       font-weight: normal;
       font-size: 16px;
       line-height: 1.18;
@@ -189,7 +196,7 @@
     /* Контакты */
     .footer{background-color: var(--background-color);}
     .footer-link{font-family: var(--secondary-font);
-      font-style: normal;
+      
       font-weight: bold;
       font-size: 26px;
       line-height: 1.19;
@@ -209,7 +216,7 @@
       color: var(--header-color);
       }
       .footer-contacts{font-family: var(--primary-font);
-        font-style: normal;
+       
         font-weight: normal;
         font-size: 14px;
         line-height: 1.71;
@@ -225,8 +232,8 @@
         }
   /* Портфолио */
   .portfolio-list{display: flex;}
-  .portfolio-button{font-family: var(--primary-font);
-    font-style: normal;
+  .portfolio-button{
+   
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -242,7 +249,7 @@
     background-color: var(--interactive-color);
     cursor: pointer;}
     .portfolio-heading{font-family: var(--primary-font);
-      font-style: normal;
+    
       font-weight: bold;
       font-size: 18px;
       line-height: 2;
@@ -253,7 +260,7 @@
       color:var(--primary-color);
       }
     .portfolio-description{font-family: var(--primary-font);
-      font-style: normal;
+     
       font-weight: normal;
       font-size: 16px;
       line-height: 30px;
