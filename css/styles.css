@@ -36,6 +36,16 @@
     display: flex;
   }
   .header{background-color: var(--header-color);}
+  .header-list{
+ 
+ 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+color: #212121;
+  }
   .web{color: var(--interactive-color);}
   .header-link{font-family: var(--secondary-font);
     font-style: normal;
@@ -233,7 +243,7 @@
   /* Портфолио */
   .portfolio-list{display: flex;}
   .portfolio-button{
-   
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
